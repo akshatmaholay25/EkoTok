@@ -4,6 +4,12 @@ import { ArrowDown, PlayCircle, Users } from "lucide-react";
 import Link from "next/link";
 import { LottiePlayer } from '@/components/lottie-player';
 
+// ACTION REQUIRED:
+// 1. Create a folder named 'lottie' inside 'src/lib/' if it doesn't exist.
+// 2. Place your Lottie JSON file (e.g., 'my-animation.json') in 'src/lib/lottie/'.
+// 3. Uncomment the import below and update the path if your filename is different.
+// import exampleLottieData from '@/lib/lottie/example-animation.json';
+
 export function HeroSection() {
   return (
     <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary/10 via-background to-secondary/10 animated-gradient">
@@ -33,23 +39,25 @@ export function HeroSection() {
           </div>
           <div className="flex justify-center items-center row-start-1 md:row-auto">
             {/* 
-              ACTION REQUIRED: Replace "YOUR_LOTTIE_ANIMATION_URL_HERE" with the actual URL 
+              OPTION 1 (Current): Use a URL.
+              Replace "YOUR_LOTTIE_ANIMATION_URL_HERE" with the actual URL 
               to your Lottie JSON animation file.
               You can find Lottie animations on sites like LottieFiles.com.
               Example: animationUrl="https://assets10.lottiefiles.com/packages/lf20_example.json" 
             */}
             <LottiePlayer 
               animationUrl="YOUR_LOTTIE_ANIMATION_URL_HERE" 
+              // animationData={exampleLottieData} // <-- OPTION 2: Uncomment this and comment out animationUrl if using local JSON
               className="w-full max-w-sm sm:max-w-md md:max-w-lg h-auto"
               fallbackText="Loading amazing animation..."
             />
             {/*
-              Alternatively, if you have the Lottie JSON data directly, you can pass it:
-              import myLottieAnimation from './my-lottie.json'; // if JSON is local
-              <LottiePlayer 
-                animationData={myLottieAnimation} 
-                className="w-full max-w-sm sm:max-w-md md:max-w-lg h-auto"
-              />
+              To use OPTION 2 (local Lottie JSON):
+              1. Place your Lottie JSON file (e.g., 'example-animation.json') in 'src/lib/lottie/'.
+              2. Uncomment the 'exampleLottieData' import at the top of this file.
+              3. Comment out the 'animationUrl' prop above.
+              4. Uncomment the 'animationData={exampleLottieData}' prop above.
+                 (Remember to replace 'exampleLottieData' if your import name is different).
             */}
           </div>
         </div>
