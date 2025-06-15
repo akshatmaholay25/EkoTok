@@ -35,7 +35,7 @@ export function HeroSection() {
               src="https://lottie.host/b2fcf8ce-77af-4869-8ace-3fbec2990e16/3eOOeSvpwW.lottie"
               background="transparent"
               speed="1"
-              style={{ width: '300px', height: '300px' }}
+              style={{ width: '450px', height: '450px' }}
               loop
               autoplay
             ></dotlottie-player>
