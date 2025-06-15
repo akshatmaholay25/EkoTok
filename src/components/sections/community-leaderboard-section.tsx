@@ -68,9 +68,9 @@ export function CommunityLeaderboardSection() {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="flex justify-center my-6">
-                {/* 
+                {/*
                   The Lottie animation previously here was causing a 403 error.
-                  Replaced with a placeholder. Please update with a working Lottie URL 
+                  Replaced with a placeholder. Please update with a working Lottie URL
                   or a self-hosted Lottie file.
                   Example of dotlottie-player if you get a new URL:
                   <dotlottie-player
@@ -82,12 +82,13 @@ export function CommunityLeaderboardSection() {
                     autoplay
                   ></dotlottie-player>
                 */}
-                <Image 
-                  src="https://placehold.co/250x250.png" 
-                  alt="Community animation placeholder" 
-                  width={250} 
-                  height={250}
-                  data-ai-hint="community animation" 
+                <Image
+                  src="https://placehold.co/600x400.png" // Updated src to match error
+                  alt="Community event placeholder"
+                  width={600} // Updated width
+                  height={400} // Updated height
+                  className="object-cover rounded-md" // Added object-cover for styling
+                  data-ai-hint="community event" // Updated AI hint
                 />
               </div>
               <ul className="space-y-3">
