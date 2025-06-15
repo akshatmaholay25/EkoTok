@@ -1,19 +1,17 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-// Removed: import { UploadCloud } from "lucide-react";
 
 export function SubmissionSection() {
   return (
     <section id="submit" className="py-16 md:py-24 bg-primary/5">
       <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          {/* Replaced UploadCloud icon with dotlottie-player */}
           <div className="flex justify-center mb-4">
             <dotlottie-player
-              src="https://lottie.host/5f5e0176-a979-4089-8f65-8b2f919105ae/yqgJ2aM0XN.lottie" // Replace with your desired Lottie animation URL
+              src="https://lottie.host/c42465a3-ba54-4c68-8529-bfcfc9bc5107/1zvYars6Qn.lottie"
               background="transparent"
               speed="1"
-              style={{ width: '100px', height: '100px' }} // Adjusted size, can be further customized
+              style={{ width: '300px', height: '300px' }}
               loop
               autoplay
             ></dotlottie-player>
