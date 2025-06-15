@@ -31,12 +31,11 @@ export function SubmissionSection() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="aspect-w-16 aspect-h-9 md:aspect-h-7">
-              {/* Replace YOUR_GOOGLE_FORM_EMBED_URL with your actual Google Form embed link */}
+            <div> {/* Removed aspect ratio classes from this div */}
               <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSe_placeholder_form_id_for_ecotok/viewform?embedded=true"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeJtrPPKfuuoqJgkH4TUjgsu4IFYkESpndEch0QWKDYJIghPw/viewform?embedded=true"
                 width="100%"
-                height="700"
+                height="1028"
                 frameBorder="0"
                 marginHeight={0}
                 marginWidth={0}
