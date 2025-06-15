@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['PT Sans', 'sans-serif'],
+        headline: ['PT Sans', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
@@ -46,7 +46,10 @@ export default {
           foreground: 'hsl(var(--destructive-foreground))',
         },
         border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
+        input: {
+          DEFAULT: 'hsl(var(--input))',
+          foreground: 'hsl(var(--input-foreground))',
+        },
         ring: 'hsl(var(--ring))',
         chart: {
           '1': 'hsl(var(--chart-1))',
@@ -88,10 +91,16 @@ export default {
             height: '0',
           },
         },
+        'gradient-animation': {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'gradient': 'gradient-animation 15s ease infinite',
       },
     },
   },
