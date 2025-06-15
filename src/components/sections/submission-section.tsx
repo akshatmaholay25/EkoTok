@@ -41,13 +41,13 @@ export function SubmissionSection() {
           <CardContent>
             {!isFormVisible && (
               <div className="text-center py-6">
-                <Button 
-                  onClick={() => setIsFormVisible(true)} 
-                  size="lg" 
-                  className="shadow-lg hover:shadow-xl transition-shadow"
+                <Button
+                  onClick={() => setIsFormVisible(true)}
+                  size="lg"
+                  className="shadow-lg hover:shadow-xl transition-shadow font-semibold"
                 >
                   <PlayCircle className="mr-2 h-5 w-5" />
-                  Show Video Submission Form
+                  Show The Form
                 </Button>
               </div>
             )}
@@ -55,7 +55,7 @@ export function SubmissionSection() {
               className={`
                 transition-[max-height,opacity] duration-700 ease-in-out
                 ${isFormVisible ? 'max-h-[1100px] opacity-100' : 'max-h-0 opacity-0'}
-                overflow-hidden 
+                overflow-hidden
               `}
             >
               {/* This div wrapper ensures the iframe itself doesn't have conflicting transition styles initially */}
