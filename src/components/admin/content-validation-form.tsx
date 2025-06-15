@@ -1,18 +1,19 @@
 
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useFormStatus } from 'react-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { handleVideoValidation, type ValidationFormState } from '@/app/actions';
-import { useEffect } from 'react';
-import { useToast } from '@/hooks/use-toast';
-import { CheckCircle, AlertCircle, Loader2, Info } from 'lucide-react';
+// import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+// import { handleVideoValidation, type ValidationFormState } from '@/app/actions';
+import { Loader2, Info } from 'lucide-react';
+// import { CheckCircle, AlertCircle } from 'lucide-react';
 
+
+// SubmitButton is defined outside ContentValidationForm
 function SubmitButton() {
   const { pending } = useFormStatus();
   return (
@@ -24,22 +25,8 @@ function SubmitButton() {
 }
 
 export function ContentValidationForm() {
-  const initialState: ValidationFormState = null;
-  const [state, formAction] = useFormState(handleVideoValidation, initialState);
-  const { toast } = useToast();
-
-  useEffect(() => {
-    // Simplified toast logic to focus on parsing error resolution
-    if (state?.issues && state.issues.length > 0) {
-      toast({
-        title: "Processing Issue",
-        description: state.message || "An issue occurred during processing.",
-        variant: "destructive",
-      });
-    }
-    // Other specific error toasts can be re-added once parsing is fixed.
-    // Success messages are handled by the Alert component.
-  }, [state, toast]);
+  // const initialState: ValidationFormState = null;
+  // const [state, formAction] = useFormState(handleVideoValidation, initialState);
 
   return (
     <Card className="w-full shadow-xl">
@@ -49,7 +36,8 @@ export function ContentValidationForm() {
           Enter video details to check for originality and relevance to sustainability themes using our AI tool.
         </CardDescription>
       </CardHeader>
-      <form action={formAction}>
+      {/* <form action={formAction}> */}
+      <form onSubmit={(e) => e.preventDefault()}> {/* Simplified form handling for now */}
         <CardContent className="space-y-6">
           <div className="space-y-2">
             <Label htmlFor="videoUrl">Video URL</Label>
@@ -58,13 +46,11 @@ export function ContentValidationForm() {
               name="videoUrl"
               type="url"
               placeholder="https://example.com/your-video"
-              defaultValue={state?.fields?.videoUrl}
+              // defaultValue={state?.fields?.videoUrl}
               aria-describedby="videoUrl-error"
               required
             />
-            {state?.issues && state.issues.find(issue => issue.toLowerCase().includes('url')) && (
-                <p id="videoUrl-error" className="text-sm text-destructive">{state.issues.find(issue => issue.toLowerCase().includes('url'))}</p>
-            )}
+            {/* Error display logic removed for simplification */}
           </div>
           <div className="space-y-2">
             <Label htmlFor="videoDescription">Video Description</Label>
@@ -73,13 +59,11 @@ export function ContentValidationForm() {
               name="videoDescription"
               placeholder="Describe the video content, its purpose, and key eco-friendly aspects."
               rows={4}
-              defaultValue={state?.fields?.videoDescription}
+              // defaultValue={state?.fields?.videoDescription}
               aria-describedby="videoDescription-error"
               required
             />
-            {state?.issues && state.issues.find(issue => issue.toLowerCase().includes('description')) && (
-                <p id="videoDescription-error" className="text-sm text-destructive">{state.issues.find(issue => issue.toLowerCase().includes('description'))}</p>
-            )}
+            {/* Error display logic removed for simplification */}
           </div>
         </CardContent>
         <CardFooter className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -91,7 +75,8 @@ export function ContentValidationForm() {
         </CardFooter>
       </form>
 
-      {state?.data && (
+      {/* Result display logic removed for simplification */}
+      {/* {state?.data && (
         <div className="p-6 pt-0">
           <Alert variant={state.data.isOriginal && state.data.isRelevant ? "default" : "destructive"} className="mt-6">
              {state.data.isOriginal && state.data.isRelevant ? <CheckCircle className="h-5 w-5" /> : <AlertCircle className="h-5 w-5 />}
@@ -103,7 +88,7 @@ export function ContentValidationForm() {
             </AlertDescription>
           </Alert>
         </div>
-      )}
+      )} */}
     </Card>
   );
 }
