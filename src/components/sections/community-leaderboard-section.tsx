@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -6,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { MessageCircle, Award, Users, Zap, CheckCircle, Trophy } from "lucide-react";
-import Image from "next/image"; // For placeholder avatars if needed
+import Image from "next/image";
 
 const communityBenefits = [
   { icon: <Users className="h-5 w-5 text-primary" />, text: "Connect with like-minded eco-enthusiasts." },
@@ -67,14 +68,27 @@ export function CommunityLeaderboardSection() {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="flex justify-center my-6">
-                 <dotlottie-player
-                  src="https://lottie.host/92c5a080-1a74-471d-86d1-acb0d6ac47a3/a9B4XyFwUq.lottie" // Example Lottie, replace with a relevant one
-                  background="transparent"
-                  speed="1"
-                  style={{ width: '250px', height: '250px' }}
-                  loop
-                  autoplay
-                ></dotlottie-player>
+                {/* 
+                  The Lottie animation previously here was causing a 403 error.
+                  Replaced with a placeholder. Please update with a working Lottie URL 
+                  or a self-hosted Lottie file.
+                  Example of dotlottie-player if you get a new URL:
+                  <dotlottie-player
+                    src="YOUR_NEW_LOTTIE_URL_HERE"
+                    background="transparent"
+                    speed="1"
+                    style={{ width: '250px', height: '250px' }}
+                    loop
+                    autoplay
+                  ></dotlottie-player>
+                */}
+                <Image 
+                  src="https://placehold.co/250x250.png" 
+                  alt="Community animation placeholder" 
+                  width={250} 
+                  height={250}
+                  data-ai-hint="community animation" 
+                />
               </div>
               <ul className="space-y-3">
                 {communityBenefits.map((benefit, index) => (
