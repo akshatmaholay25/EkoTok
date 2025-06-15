@@ -2,13 +2,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, PlayCircle, Users } from "lucide-react";
 import Link from "next/link";
-import { LottiePlayer } from '@/components/lottie-player';
-
-// ACTION REQUIRED (if you switch to local JSON):
-// 1. Create a folder named 'lottie' inside 'src/lib/' if it doesn't exist.
-// 2. Place your Lottie JSON file (e.g., 'my-animation.json') in 'src/lib/lottie/'.
-// 3. Uncomment the import below and update the path if your filename is different.
-// import exampleLottieData from '@/lib/lottie/example-animation.json';
 
 export function HeroSection() {
   return (
@@ -38,24 +31,14 @@ export function HeroSection() {
             </div>
           </div>
           <div className="flex justify-center items-center row-start-1 md:row-auto">
-            {/* 
-              OPTION 1 (Current): Use a URL.
-              The URL below has been updated with your provided asset link.
-            */}
-            <LottiePlayer 
-              animationUrl="https://assets1.lottiefiles.com/packages/lf20_swnrn2oy.json" 
-              // animationData={exampleLottieData} // <-- OPTION 2: Uncomment this and comment out animationUrl if using local JSON
-              className="w-full max-w-sm sm:max-w-md md:max-w-lg h-auto"
-              fallbackText="Loading amazing animation..."
-            />
-            {/*
-              To use OPTION 2 (local Lottie JSON):
-              1. Place your Lottie JSON file (e.g., 'example-animation.json') in 'src/lib/lottie/'.
-              2. Uncomment the 'exampleLottieData' import at the top of this file.
-              3. Comment out the 'animationUrl' prop above.
-              4. Uncomment the 'animationData={exampleLottieData}' prop above.
-                 (Remember to replace 'exampleLottieData' if your import name is different).
-            */}
+            <dotlottie-player
+              src="https://lottie.host/b2fcf8ce-77af-4869-8ace-3fbec2990e16/3eOOeSvpwW.lottie"
+              background="transparent"
+              speed="1"
+              style={{ width: '300px', height: '300px' }}
+              loop
+              autoplay
+            ></dotlottie-player>
           </div>
         </div>
         <div className="mt-16 text-center animate-bounce">
