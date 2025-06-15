@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sprout, Users, Zap, Award } from "lucide-react";
 
@@ -29,6 +30,16 @@ export function MissionSection() {
     <section id="mission" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
+          <div className="flex justify-center mb-6">
+            <dotlottie-player
+              src="https://lottie.host/c98cca49-1936-472a-9393-20ec4f2b483a/LRmNg5MVgf.lottie"
+              background="transparent"
+              speed="1"
+              style={{ width: '300px', height: '300px' }}
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">
             Our GreenVibes Mission
           </h2>
