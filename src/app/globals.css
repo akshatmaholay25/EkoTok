@@ -8,25 +8,25 @@ body {
 
 @layer base {
   :root {
-    --background: 60 56% 91%; /* Light Beige */
-    --foreground: 200 15% 25%; /* Dark grayish blue, for better contrast on beige */
-    --card: 60 50% 95%; /* Slightly darker beige or off-white for cards */
-    --card-foreground: 200 15% 25%;
-    --popover: 60 50% 95%;
-    --popover-foreground: 200 15% 25%;
+    --background: 220 20% 96%; /* Very Light Cool Gray */
+    --foreground: 220 15% 25%; /* Dark grayish blue, for good contrast */
+    --card: 220 20% 98%; /* Slightly lighter cool gray for cards */
+    --card-foreground: 220 15% 25%;
+    --popover: 220 20% 98%;
+    --popover-foreground: 220 15% 25%;
     --primary: 181 49% 43%; /* Forest Green */
     --primary-foreground: 180 50% 96%; /* Very light green/cyan for text on primary */
     --secondary: 197 50% 80%; /* Lighter Teal */
     --secondary-foreground: 197 63% 20%; /* Darker teal for text on secondary */
-    --muted: 60 30% 85%;
-    --muted-foreground: 60 25% 45%;
+    --muted: 220 15% 88%; /* Muted cool gray */
+    --muted-foreground: 220 10% 45%;
     --accent: 197 63% 37%; /* Teal */
     --accent-foreground: 180 50% 96%; /* Light color for text on accent */
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 98%;
-    --border: 181 30% 75%; /* Muted green for borders */
-    --input: 60 40% 93%; 
-    --input-foreground: 200 15% 25%;
+    --border: 181 30% 75%; /* Muted green for borders - might need adjustment based on new bg */
+    --input: 220 15% 94%; /* Input background to match new theme */
+    --input-foreground: 220 15% 25%;
     --ring: 181 49% 43%; /* Primary color for rings */
     --radius: 0.5rem;
     
@@ -47,25 +47,25 @@ body {
   }
 
   .dark {
-    --background: 181 20% 10%; /* Dark Greenish background */
-    --foreground: 60 50% 90%; /* Light beige text */
-    --card: 181 20% 15%;
-    --card-foreground: 60 50% 90%;
-    --popover: 181 20% 15%;
-    --popover-foreground: 60 50% 90%;
+    --background: 220 15% 15%; /* Neutral Dark Gray */
+    --foreground: 220 15% 85%; /* Light cool gray text */
+    --card: 220 15% 18%; /* Slightly lighter dark gray for cards */
+    --card-foreground: 220 15% 85%;
+    --popover: 220 15% 18%;
+    --popover-foreground: 220 15% 85%;
     --primary: 181 49% 53%; /* Brighter Forest Green for dark mode */
     --primary-foreground: 181 20% 10%;
     --secondary: 197 50% 40%; /* Darker Teal */
-    --secondary-foreground: 60 50% 90%;
-    --muted: 181 15% 25%;
-    --muted-foreground: 60 40% 70%;
+    --secondary-foreground: 220 15% 85%;
+    --muted: 220 10% 25%; /* Muted dark gray */
+    --muted-foreground: 220 10% 65%;
     --accent: 197 63% 47%; /* Brighter Teal */
     --accent-foreground: 181 20% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 181 20% 25%;
-    --input: 181 20% 25%;
-    --input-foreground: 60 50% 90%;
+    --border: 220 10% 30%; /* Darker border */
+    --input: 220 10% 25%;
+    --input-foreground: 220 15% 85%;
     --ring: 181 49% 53%;
 
     --chart-1: 181 49% 53%;
@@ -112,4 +112,3 @@ input, textarea, select {
 input::placeholder, textarea::placeholder {
     color: hsl(var(--muted-foreground));
 }
-
