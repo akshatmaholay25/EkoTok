@@ -17,7 +17,7 @@ export function SubmissionSection() {
             ></dotlottie-player>
           </div>
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-            Share Your Knowledge Via Video
+            Share Your Hacks Via Video
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/70">
             Got a great tip, hack, or review? Submit your 30-60 second video through the form below. We can&apos;t wait to see your GreenVibes!
