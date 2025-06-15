@@ -1,12 +1,23 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { UploadCloud } from "lucide-react";
+// Removed: import { UploadCloud } from "lucide-react";
 
 export function SubmissionSection() {
   return (
     <section id="submit" className="py-16 md:py-24 bg-primary/5">
       <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <UploadCloud className="h-12 w-12 mx-auto text-primary mb-4" />
+          {/* Replaced UploadCloud icon with dotlottie-player */}
+          <div className="flex justify-center mb-4">
+            <dotlottie-player
+              src="https://lottie.host/5f5e0176-a979-4089-8f65-8b2f919105ae/yqgJ2aM0XN.lottie" // Replace with your desired Lottie animation URL
+              background="transparent"
+              speed="1"
+              style={{ width: '100px', height: '100px' }} // Adjusted size, can be further customized
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">
             Share Your Eco-Friendly Video
           </h2>
