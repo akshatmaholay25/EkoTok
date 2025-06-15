@@ -19,7 +19,7 @@ export function SubmissionSection() {
               src="https://lottie.host/c42465a3-ba54-4c68-8529-bfcfc9bc5107/1zvYars6Qn.lottie"
               background="transparent"
               speed="1"
-              style={{ width: '300px', height: '300px' }}
+              style={{ width: '150px', height: '150px' }}
               loop
               autoplay
             ></dotlottie-player>
