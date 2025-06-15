@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative pt-20 md:pt-32 pb-10 md:pb-16 bg-gradient-to-br from-primary/10 via-background to-secondary/10 animated-gradient">
+    <section className="relative pt-20 md:pt-32 pb-4 md:pb-8 bg-gradient-to-br from-primary/10 via-background to-secondary/10 animated-gradient">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center md:text-left">
@@ -41,7 +41,7 @@ export function HeroSection() {
             ></dotlottie-player>
           </div>
         </div>
-        <div className="mt-10 text-center animate-bounce">
+        <div className="mt-6 text-center animate-bounce">
           <ArrowDown className="h-8 w-8 mx-auto text-primary/70" />
         </div>
       </div>
