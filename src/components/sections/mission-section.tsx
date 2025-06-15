@@ -35,7 +35,7 @@ export function MissionSection() {
               src="https://lottie.host/c98cca49-1936-472a-9393-20ec4f2b483a/LRmNg5MVgf.lottie"
               background="transparent"
               speed="1"
-              style={{ width: '150px', height: '150px' }}
+              style={{ width: '100px', height: '100px' }}
               loop
               autoplay
             ></dotlottie-player>
