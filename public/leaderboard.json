@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "EcoChampion Alex",
+    "points": 1500,
+    "avatarUrl": "https://placehold.co/100x100.png",
+    "aiHint": "profile person"
+  },
+  {
+    "id": "2",
+    "name": "GreenGuru Sam",
+    "points": 1250,
+    "avatarUrl": "https://placehold.co/100x100.png",
+    "aiHint": "user avatar"
+  },
+  {
+    "id": "3",
+    "name": "Sustainable Sue",
+    "points": 1100,
+    "avatarUrl": "https://placehold.co/100x100.png",
+    "aiHint": "person smiling"
+  }
+]

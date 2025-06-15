@@ -1,13 +1,12 @@
 import { Logo } from '@/components/logo';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Github, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const navLinks = [
   { href: '#submit', label: 'Submit Video' },
-  { href: '#gallery', label: 'Gallery' },
-  { href: '#community', label: 'Community' },
+  { href: '#community', label: 'Community & Leaders' },
   { href: '#validate', label: 'Validate Content (Demo)'}
 ];
 
