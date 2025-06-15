@@ -4,7 +4,7 @@ import { ArrowDown, PlayCircle, Users } from "lucide-react";
 import Link from "next/link";
 import { LottiePlayer } from '@/components/lottie-player';
 
-// ACTION REQUIRED:
+// ACTION REQUIRED (if you switch to local JSON):
 // 1. Create a folder named 'lottie' inside 'src/lib/' if it doesn't exist.
 // 2. Place your Lottie JSON file (e.g., 'my-animation.json') in 'src/lib/lottie/'.
 // 3. Uncomment the import below and update the path if your filename is different.
@@ -40,13 +40,10 @@ export function HeroSection() {
           <div className="flex justify-center items-center row-start-1 md:row-auto">
             {/* 
               OPTION 1 (Current): Use a URL.
-              Replace "YOUR_LOTTIE_ANIMATION_URL_HERE" with the actual URL 
-              to your Lottie JSON animation file.
-              You can find Lottie animations on sites like LottieFiles.com.
-              Example: animationUrl="https://assets10.lottiefiles.com/packages/lf20_example.json" 
+              The URL below has been updated with your provided asset link.
             */}
             <LottiePlayer 
-              animationUrl="YOUR_LOTTIE_ANIMATION_URL_HERE" 
+              animationUrl="https://assets1.lottiefiles.com/packages/lf20_swnrn2oy.json" 
               // animationData={exampleLottieData} // <-- OPTION 2: Uncomment this and comment out animationUrl if using local JSON
               className="w-full max-w-sm sm:max-w-md md:max-w-lg h-auto"
               fallbackText="Loading amazing animation..."
