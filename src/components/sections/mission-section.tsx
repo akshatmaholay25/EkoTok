@@ -27,7 +27,7 @@ const missionPoints = [
 
 export function MissionSection() {
   return (
-    <section id="mission" className="py-16 md:py-24 bg-background">
+    <section id="mission" className="pt-10 md:pt-16 pb-16 md:pb-24 bg-background">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="flex justify-center mb-6">
