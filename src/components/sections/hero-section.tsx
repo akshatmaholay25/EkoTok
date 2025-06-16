@@ -10,10 +10,10 @@ export function HeroSection() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center md:text-left">
             <h1 className="font-headline text-4xl font-extrabold tracking-tight text-primary sm:text-5xl md:text-6xl">
-              Welcome to <span className="text-accent">EcoTok</span>
+              Welcome to <span className="text-accent">EchoTok</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto md:mx-0 text-lg text-foreground/80 sm:text-xl md:text-2xl">
-              Share your green vibes! Post 30-60 second videos on eco-friendly tips, sustainable hacks, and conscious product reviews. Let&apos;s build a greener future, one video at a time.
+              Share your green vibes! Post 30-60 second videos on Echo-friendly tips, sustainable hacks, and conscious product reviews. Let&apos;s build a greener future, one video at a time.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row justify-center md:justify-start items-center gap-4">
               <Button size="lg" asChild className="shadow-lg hover:shadow-xl transition-shadow">

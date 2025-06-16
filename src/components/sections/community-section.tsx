@@ -9,7 +9,7 @@ import { MessageCircle, Award, Users, Zap, CheckCircle, Trophy } from "lucide-re
 import Image from "next/image"; // For placeholder avatars if needed
 
 const communityBenefits = [
-  { icon: <Users className="h-5 w-5 text-primary" />, text: "Connect with like-minded eco-enthusiasts." },
+  { icon: <Users className="h-5 w-5 text-primary" />, text: "Connect with like-minded Echo-enthusiasts." },
   { icon: <Zap className="h-5 w-5 text-primary" />, text: "Share ideas, get feedback, and collaborate." },
   { icon: <Award className="h-5 w-5 text-primary" />, text: "Stay updated on GreenVibes news and events." },
   { icon: <CheckCircle className="h-5 w-5 text-primary" />, text: "Participate in exclusive community challenges." },
@@ -49,7 +49,7 @@ export function CommunityLeaderboardSection() {
             Join Our Vibrant Community & See Who's Leading!
           </h2>
           <p className="mt-4 max-w-3xl mx-auto text-lg text-foreground/70">
-            Connect, share, and climb the ranks in the EcoTok community. Your contributions make a difference!
+            Connect, share, and climb the ranks in the EchoTok community. Your contributions make a difference!
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export function CommunityLeaderboardSection() {
                 <CardTitle className="font-headline text-2xl text-accent">Connect & Grow</CardTitle>
               </div>
               <CardDescription>
-                Our Discord server is the hub for all things EcoTok. Here’s why you should join:
+                Our Discord server is the hub for all things EchoTok. Here’s why you should join:
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -98,7 +98,7 @@ export function CommunityLeaderboardSection() {
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Award className="h-8 w-8 text-accent" />
-                <CardTitle className="font-headline text-2xl text-accent">Top Eco-Innovators</CardTitle>
+                <CardTitle className="font-headline text-2xl text-accent">Top Echo-Innovators</CardTitle>
               </div>
               <CardDescription>
                 Meet the top 3 contributors inspiring sustainable change.

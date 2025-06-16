@@ -68,8 +68,8 @@ export function SubmissionSection() {
                   marginHeight={0}
                   marginWidth={0}
                   className="rounded-md"
-                  title="EcoTok Video Submission Form"
-                  aria-label="EcoTok Video Submission Form"
+                  title="EchoTok Video Submission Form"
+                  aria-label="EchoTok Video Submission Form"
                 >
                   Loading…
                 </iframe>

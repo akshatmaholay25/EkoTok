@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'EcoTok - Share Your GreenVibes',
-  description: 'A platform for sharing eco-friendly video content. Powered by GreenVibes.',
+  title: 'EchoTok - Share Your GreenVibes',
+  description: 'A platform for sharing Echo-friendly video content. Powered by GreenVibes.',
 };
 
 export default function RootLayout({

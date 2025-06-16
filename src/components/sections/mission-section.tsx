@@ -11,12 +11,12 @@ const missionPoints = [
   {
     icon: <Users className="h-10 w-10 text-primary" />,
     title: "Build Community",
-    description: "Foster a supportive network of eco-conscious individuals sharing knowledge and motivation.",
+    description: "Foster a supportive network of Echo-conscious individuals sharing knowledge and motivation.",
   },
   {
     icon: <Zap className="h-10 w-10 text-primary" />,
     title: "Promote Innovation",
-    description: "Showcase creative eco-hacks, sustainable technologies, and reviews of planet-friendly products.",
+    description: "Showcase creative Echo-hacks, sustainable technologies, and reviews of planet-friendly products.",
   },
   {
     icon: <Award className="h-10 w-10 text-primary" />,
@@ -44,7 +44,7 @@ export function MissionSection() {
             Our GreenVibes Mission
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/70">
-            At GreenVibes, we believe in the power of shared knowledge to create a sustainable world. Our platform, EcoTok, is dedicated to:
+            At GreenVibes, we believe in the power of shared knowledge to create a sustainable world. Our platform, EchoTok, is dedicated to:
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">

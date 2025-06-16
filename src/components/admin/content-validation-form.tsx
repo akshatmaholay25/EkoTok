@@ -57,7 +57,7 @@ export function ContentValidationForm() {
             <Textarea
               id="videoDescription"
               name="videoDescription"
-              placeholder="Describe the video content, its purpose, and key eco-friendly aspects."
+              placeholder="Describe the video content, its purpose, and key Echo-friendly aspects."
               rows={4}
               // defaultValue={state?.fields?.videoDescription}
               aria-describedby="videoDescription-error"
