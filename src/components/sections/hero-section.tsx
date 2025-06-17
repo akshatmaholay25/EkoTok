@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative pt-20 md:pt-32 pb-4 md:pb-8 bg-gradient-to-br from-primary/10 via-background to-secondary/10 animated-gradient">
+    <section className="relative pt-20 md:pt-28 pb-4 md:pb-6 bg-gradient-to-br from-primary/10 via-background to-secondary/10 animated-gradient">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center md:text-left">
-            <h1 className="font-headline text-4xl font-extrabold tracking-tight text-primary sm:text-5xl md:text-6xl">
+            <h1 className="font-headline text-3xl font-extrabold tracking-tight text-primary sm:text-4xl md:text-5xl lg:text-6xl">
               Welcome to <span className="text-accent">EchoTok</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto md:mx-0 text-lg text-foreground/80 sm:text-xl md:text-2xl">
@@ -31,17 +31,19 @@ export function HeroSection() {
             </div>
           </div>
           <div className="flex justify-center items-center row-start-1 md:row-auto">
-            <dotlottie-player
-              src="https://lottie.host/b2fcf8ce-77af-4869-8ace-3fbec2990e16/3eOOeSvpwW.lottie"
-              background="transparent"
-              speed="1"
-              style={{ width: '450px', height: '450px' }}
-              loop
-              autoplay
-            ></dotlottie-player>
+            <div className="w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px]">
+              <dotlottie-player
+                src="https://lottie.host/b2fcf8ce-77af-4869-8ace-3fbec2990e16/3eOOeSvpwW.lottie"
+                background="transparent"
+                speed="1"
+                style={{ width: '100%', height: '100%' }}
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
           </div>
         </div>
-        <div className="mt-6 text-center animate-bounce">
+        <div className="mt-4 text-center animate-bounce">
           <ArrowDown className="h-8 w-8 mx-auto text-primary/70" />
         </div>
       </div>
